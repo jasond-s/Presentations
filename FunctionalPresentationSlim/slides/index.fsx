@@ -242,7 +242,7 @@ type Vehicle =
 
 - We can do a bit of structural composition here to. But... 
 
-- Also, complex nested or cyclic relationships are _**HARD**_ to represent.
+- Complex nested or cyclic relationships are _**HARD**_ to represent.
 
 - This is also awesome and declaritive but it does not prevent us from doing awesome things, *ahem* functional composition.
 
@@ -291,11 +291,14 @@ type Vehicle =
 
 - It's all imperative from here, side effects are abound, knots, aspects, spaghetti and meatballs.
 
-- It means we can't compose anything that can be 'done', unless represented explicitly in the structure.
+- It means we can't compose anything that can be __*done*__, unless represented explicitly in the structure.
 
 ***
 
 #### F#
+
+<br/>
+<span style="background-color: lime; padding: 6px;">Succinct.</span> <span style="background-color: blue; padding: 6px;">Readable.</span> <span style="background-color: gold; padding: 6px;">Many density.</span>
 
 *)
     let changeTire carToRepair =
@@ -305,7 +308,7 @@ type Vehicle =
       |> AddWheel        
 (**
 
-<span style="background-color: pink; padding: 5px;">So declarative.</span> <span style="background-color: gold; padding: 5px;">Much pipe.</span> <span style="background-color: lime; padding: 5px;">Wow.</span> <span style="background-color: blue; padding: 5px;">No imperative.</span>
+<span style="background-color: pink; padding: 6px;">So declarative.</span> <span style="background-color: gold; padding: 6px;">Much pipe.</span> <span style="background-color: lime; padding: 6px;">Wow.</span> <span style="background-color: blue; padding: 6px;">No imperative.</span>
 
 ---
 
@@ -315,9 +318,9 @@ type Vehicle =
 
 - No side effects and gotos so we can reason about where it's going and when.
 
-- Can use pipes and *monads* to descrive errors and execution context.
+- Can use pipes and *monads* to describe error handling and execution context.
 
-- Infix operators are a secret language, have to be kept to a minimum.
+- Infix operators are a **secret language**, have to be kept to a minimum.
 
 ---
 
@@ -373,19 +376,13 @@ type Vehicle =
 ### Dependancy Injection 
 ### (Creational Patterns)
 
-<br/>
-<br/>
-
 #### C#
 
 - Root container for BUILDING ALL THE THINGS!
 
 
     [lang=cs]
-    FactoryServiceFactoryFactory.GetSingletonInstance();
-
-<br/>
-<br/>
+    new FactoryServiceFactoryFactory.GetSingletonInstance();
 
 #### F#
 
@@ -397,9 +394,6 @@ type Vehicle =
 ### Adapters and Facades 
 ### (Structural Patterns)
 
-<br/>
-<br/>
-
 #### C#
 
 - Attributes, autofac and interface segregation.
@@ -407,9 +401,6 @@ type Vehicle =
 
     [lang=cs]
     new Proxy(hopeThisIsntAWebConnection).GetAMassiveObject();
-
-<br/>
-<br/>
 
 #### F#
 
@@ -419,9 +410,6 @@ type Vehicle =
 
 ### Mutex, Semaphore 
 ### (Concurrency patterns)
-
-<br/>
-<br/>
 
 #### C#
 
@@ -435,12 +423,9 @@ type Vehicle =
     }
     semaphore.Release(someInt32)
 
-<br/>
-<br/>
-
 #### F#
 
-- Mailboxes... Which are functions.
+- Mailboxes........... Which are functions.
 - Immutable data so at least if you break, you don't break everything.
 
 ***
@@ -454,12 +439,12 @@ type Vehicle =
 #### - Large structurally complex domains with simple actions.
 #### - Doing all those horrible side effects.
 
-<br/>
-
 ### FUNctional Orientation
 
 #### - Small focussed domains with complex control flow.
-#### - High degree of paper provable reasoning necessary.
+#### - High degree of paper provable reasoning necessary. 
+
+> Can I hear a 'micro service', what what!?
 
 ***
 
