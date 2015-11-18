@@ -109,7 +109,7 @@
 - Polymorphism via inheritance.
 - Easy to add new 'kinds' of things.
 - Mutable, hardware efficient.
-- SOLID, although contradictions arrise.
+- SOL<del>I</del>D, although contradictions arrise.
 
 ---
 
@@ -120,7 +120,7 @@
 - Simple to see the structure of all the things.
 - Easy to add new behaviour.
 - Easily to spec a concurrent model.
-- When is an L not an S?
+- When is an I not an S?
 
 ![Umm, guys I'm trying to get through here.](./images/deadlock.jpg)
 
