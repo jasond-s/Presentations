@@ -253,7 +253,7 @@ type Vehicle =
 
 #### F#
 
-- I'm going to be honest with you I am seriously struggling here to find things that are missing here... I guess I haven't introduced much __*doing*__... interestingly this is the same number of lines of code to describe this whole domain as in the C# example above... Just sayiny.
+- I'm going to be honest with you I am seriously struggling here to find things that are missing here. I guess I haven't introduced much __*doing*__. Interestingly this is the same number of lines of code to describe this whole domain as in the C# example above. Just saying.
 
 #### More on that last one later....
 
