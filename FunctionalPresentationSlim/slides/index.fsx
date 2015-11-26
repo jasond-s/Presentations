@@ -93,7 +93,7 @@
 - Polymorphism via inheritance.
 - Easy to add new 'kinds' of things.
 - Mutable, hardware efficient.
-- SOLID, although commonly contradictions arrise.
+- SOLID, although commonly contradictions arise.
 
 ---
 
