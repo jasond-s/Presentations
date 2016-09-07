@@ -72,6 +72,7 @@ Virtual-Dom diffs are trivial to find.
 
 #### DOM rendering is rubbish in most frameworks sometimes we have to balance fluid UI with compelx UI.
 #### The Elm HTML rendering pipeline is based on the [vitual DOM principle](https://github.com/Matt-Esch/virtual-dom) (just like React.js).
+#### Canvas and SVG are the same as classic DOM, can I hear interaction and visually rich UX, what what!
 
 ---
 
@@ -99,7 +100,7 @@ Everything here is a function and can be combined just like other functions. Bui
 #### Modular abstractions (filters for your address space) - ng.on
     
     [lang=erlang]
-          Signals -> Functional -> Combinatorial
+          Signals -> Functional -> Combinatorial -> Magic
            _________
           |  _____  |
           | |     | | Actions (events)
@@ -108,7 +109,7 @@ Everything here is a function and can be combined just like other functions. Bui
           | |    | foldp | App state (data service) ----> | Rendering |
           | |     -------                                  -----------
           | |________________________| |
-          |____________________________| Filters (addresses)
+          |____________________________| Filters (address)
 
 ---
 
