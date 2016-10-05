@@ -1,0 +1,12 @@
+var _user$project$Repl$t_s_o_l = {ctor: '_Tuple0'};
+var _user$project$Repl$Owner = F2(
+	function (a, b) {
+		return {name: a, animalsOwned: b};
+	});
+var _user$project$Repl$Feline = {ctor: 'Feline'};
+var _user$project$Repl$Canine = {ctor: 'Canine'};
+var _user$project$Repl$Puppy = {ctor: 'Puppy'};
+var _user$project$Repl$basketOfPuppies = {ctor: '_Tuple2', _0: _user$project$Repl$Puppy, _1: _user$project$Repl$Puppy};
+var _user$project$Repl$Dog = {ctor: 'Dog'};
+var _user$project$Repl$Kitten = {ctor: 'Kitten'};
+var _user$project$Repl$Cat = {ctor: 'Cat'};

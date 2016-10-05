@@ -7,13 +7,13 @@
 
 ***
 
-# Functional DOM with Elm
+# A Functional DOM with Elm
 
-#### We want speed!
-#### When do we want it!
-#### Yesterday!
+### We want speed!
+### When do we want it!
+### Yesterday!
 <br/>
-#### Also FRP.
+### Also FRP.
 
 ***
 
@@ -196,5 +196,26 @@ This is the full kaboodle, server and client defined in F#.
 This is basically haskell in the browser. Halogen provides SPA and FRP holy grail, but is classically functional (unapproachable).
 
 ***
+
+***
+
+<div style="width:33%; height: 100%; display: inline-block; vertical-align: top;">
+   <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/miLogo.png" alt="mi logo">
+</div>
+<div style="width:65%; height: 100%; display: inline-block; text-align: left; padding-top: 10px;">
+### <span style="color: #464B4B; font-size: 120%;">Thanks</span>
+### <span style="color: #FFA55D; text-shadow: none; font-size: 75%;">Tech@MI: tech.marketinvoice.com</span>
+### <span style="color: #FFA55D; text-shadow: none; font-size: 75%;">Tweet: @jasond_s</span>
+### <span style="color: #FFA55D; text-shadow: none; font-size: 75%;">Email: jason@jasonds.co.uk</span>
+
+##### Generation
+**[reveal.js](http://lab.hakim.se/reveal-js/#/)** presentation from [markdown](http://daringfireball.net/projects/markdown/)
+
+##### Formatting
+**[FSharp.Formatting](https://github.com/tpetricek/FSharp.Formatting)** for markdown parsing
+
+##### Railway Oriented Design
+**[Scott Wlaschin](http://fsharpforfunandprofit.com/)** F# for fun and profit
+</div>
 
 *)
