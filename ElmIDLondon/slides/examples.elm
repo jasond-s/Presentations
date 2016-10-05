@@ -4,6 +4,15 @@
 
 
 {-
+    This is an alias to a primitive type
+-}
+
+
+type alias Toy = String
+
+
+
+{-
     This is a union for some animals
 -}
 
@@ -11,7 +20,18 @@ type Animal
     = Cat
     | Kitten
     | Dog
-    | Puppy
+    | Puppy AnimalName
+
+
+{-
+    They can contain some data as well
+-}
+
+type PetActions
+    = Stroke
+    | Brush
+    | Play Toy 
+
 
 
 {-
@@ -36,7 +56,7 @@ type alias Owner =
     Records and unions have constructors
 -}
 
-me = Owner 'Jason' [ Cat ]
+me = Owner "Jason" [ Cat ]
 
 
 
@@ -89,5 +109,55 @@ buyAnotherAnimal owner animal =
 
 
 {-
-    No state is global, or at least, you can't globally access any state. 
+    DECONSTRUCTION ------------------
 -}
+
+
+{-
+    Taking a tuple apart.
+-}
+
+basketOfKittens = ( Kitten, Kitten, Kitten )
+
+putMyKittensInARow ( sooty, mittens, fluffy ) = 
+    sooty::mittens::fluffy::[]
+
+{-
+    > type Animal = Kitten | Puppy
+    > basketOfKittens = ( Kitten, Kitten, Kitten )
+    (Kitten,Kitten,Kitten) : ( Repl.Animal, Repl.Animal, Repl.Animal )
+    > putMyKittensInARow (sooty, mittens, fluffy) = sooty::mittens::fluffy::[]
+    <function> : ( a, a, a ) -> List a
+    > putMyKittensInARow basketOfKittens
+    [Kitten,Kitten,Kitten] : List Repl.Animal
+-}
+
+{-
+    Taking a list apart.
+-}
+
+type MaybeAnimal
+    = YayAnimals Animal
+    | AwwNoAnimals
+
+
+pickUpTheFirstKitten : List Animal -> MaybeAnimal
+pickUpTheFirstKitten kittens = 
+    case kittens of 
+        first::theRest -> YayAnimals first
+        []             -> AwwNoAnimals
+
+
+goToPetStoreForMoreAnimals : MaybeAnimal -> Owner -> Owner
+goToPetStoreForMoreAnimals maybeAnimal owner  = 
+    case maybeAnimal of 
+        YayAnimals kitty -> 
+            { owner | 
+                animalsOwned = owner.animalsOwned ++ [kitty] 
+            }
+        AwwNoAnimals ->
+            owner
+
+{-
+    This is a maybe monad... shhh... don't tell anyone I said monad.
+-}    
