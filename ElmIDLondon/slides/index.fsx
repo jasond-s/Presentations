@@ -24,14 +24,13 @@
 2. **2** What my problem was.
 <br><br>
 3. **3** What tool I picked to learn how to solve that problem 
-    - hint: it was Elm.
+    - Intro to FP.
 <br><br>
 4. **4** Introduction to solving that problem for yourself.
-    - Intro to FP.
     - Intro to Elm.
     - Some working code.
 <br><br>
-5. **5** What I actually did to solve my problem.
+5. **5** What I then did to solve my problems.
 
 ---
 
@@ -76,6 +75,21 @@
 
 <div style="width:90%; height: 90%; display: inline-block; vertical-align: top;">
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/kittens.gif" alt="comfort zone">
+</div>
+
+***
+
+## What is ELM
+
+<div style="text-align: left; padding-left: 10%;">
+#### 1. Installed with NPM.
+#### 2. Compiles to Javascript.
+#### 3. Runtime packaged with build files.
+#### 4. Functional.
+#### 5. Reactive.
+#### 6. Strongly (dial) typed.
+### 7. ????
+## 8. Profit.
 </div>
 
 ---
@@ -124,28 +138,9 @@ Therefore, comparisons tend to be structural by default and data tends to be cop
 
 ***
 
-## What is ELM
+## Elm Architecture
 
-<div style="text-align: left; padding-left: 10%;">
-#### 1. Installed with NPM.
-#### 2. Compiles to Javascript.
-#### 3. Runtime packaged with build files.
-#### 4. Functional.
-#### 5. Reactive.
-#### 6. Strongly (dial) typed.
-### 7. ????
-## 8. Profit.
-</div>
-
-***
-
-# Control
-
----
-
-### Architecture
-
-### Single direction for flow of information.
+#### Single direction for flow of information.
 
 #### 1. Event driven (signals send actions to an address) - ng.emit
 #### 2. Single source of data (foldp) - ng.servce
@@ -153,51 +148,46 @@ Therefore, comparisons tend to be structural by default and data tends to be cop
     
     [lang=erlang]
           Signals -> Functional -> Combinatorial -> Magic
-           _________
-          |  _____  |
-          | |     | | Actions (messages)
-          | |     v v                                Virtual DOM
-          | |     -------                            -----------
-          | |    | foldp | App state (update) ----> |  (view)   |
-          | |     -------                            -----------
-          | |____________________________________________| |         
-          |________________________________________________| 
+           ____________
+          |  ________  |
+          | |        | | Actions (messages)
+          | |        v v                               Virtual DOM
+          | |     ----------                           -----------
+          | |    | Run Time | App state (update) ---> |  (view)   |
+          | |     ----------                           -----------
+          | |______________________________________________| |         
+          |__________________________________________________| 
 
 ---
 
-### Simple App
+# <div style="font-family: 'SFComicScript' !important; color: #00ABEC;">SHOW ME</div>
+# <div style="font-family: 'SFComicScript' !important; color: #00ABEC;">THE CODE!</div>
 
-    [lang=haskell]
-    import Html exposing (..)
-    import Html.Events exposing (onClick)
+***
 
-    type alias Model = Int
+### Elm Take Homes
+<br/><br/>
+#### 1. Single direction for flow of information.
+#### 2. No 'floating' state.
+#### 3. Change only when you need to.
+#### 4. Rich type system.
 
-    type Action = Increment | Decrement
+---
 
-    update : Action -> Model -> Model
-    update action model = 
-        case action of 
-            Increment -> model + 1
-            Decrement -> model - 1
+### Doing that but, like, with angular?
+<br/><br/>
+#### 1. Event driven - ng.emit
+#### 2. Single source of data - ng.servce
+#### 3. Reactive - ng.on
+#### 4. Use Typescript betterer.
+<br/>
+... Or of course React with Redux!
 
-    view : Model -> Html
-    view model = 
-        div []
-            [ button [ onClick Decrement ] [ text "-" ]
-            , div [ countStyle ] [ text (toString model) ]
-            , button [ onClick Increment ] [ text "+" ]
-            ]
+---
 
-    countStyle : Attribute
-    countStyle =
-        style
-            [ ("font-size", "20px")
-            , ("font-family", "monospace")
-            , ("display", "inline-block")
-            , ("width", "50px")
-            , ("text-align", "center")
-            ]
+<div style="width:50%; height: 50%; display: inline-block; vertical-align: top;">
+   <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/try-it.jpg" alt="comfort zone">
+</div>
 
 ***
 
@@ -210,14 +200,11 @@ Therefore, comparisons tend to be structural by default and data tends to be cop
 ### <span style="color: #FFA55D; text-shadow: none; font-size: 75%;">Tweet: @jasond_s</span>
 ### <span style="color: #FFA55D; text-shadow: none; font-size: 75%;">Email: jason@jasonds.co.uk</span>
 
-##### Generation
-**[reveal.js](http://lab.hakim.se/reveal-js/#/)** presentation from [markdown](http://daringfireball.net/projects/markdown/)
+##### Get started with elm.
+**[Elm Lang](http://elm-lang.org/)** for all your Elm needs.
 
-##### Formatting
-**[FSharp.Formatting](https://github.com/tpetricek/FSharp.Formatting)** for markdown parsing
-
-##### Railway Oriented Design
-**[Scott Wlaschin](http://fsharpforfunandprofit.com/)** F# for fun and profit
+##### Doing in with javascript
+**[reactjs/redux](https://github.com/reactjs/redux)** was based on the Elm runtime, but works in JS.
 </div>
 
 *)
