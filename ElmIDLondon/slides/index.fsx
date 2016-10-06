@@ -25,9 +25,9 @@
 <br><br>
 3. **3** What tool I picked to learn how to solve that problem 
     - Intro to FP.
+    - Intro to Elm.
 <br><br>
 4. **4** Introduction to solving that problem for yourself.
-    - Intro to Elm.
     - Some working code.
 <br><br>
 5. **5** What I then did to solve my problems.
