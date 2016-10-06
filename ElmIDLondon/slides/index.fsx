@@ -178,7 +178,7 @@ Therefore, comparisons tend to be structural by default and data tends to be cop
 <br/><br/>
 #### 1. Event driven - ng.emit
 #### 2. Single source of data - ng.servce
-#### 3. Reactive - ng.on
+#### 3. Reactive - ng.on / $watch
 #### 4. Use Typescript betterer.
 <br/>
 ... Or of course React with Redux!
