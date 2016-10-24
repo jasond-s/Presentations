@@ -19,41 +19,41 @@
 
 ### What's next?
 
-1. **1** Who am I.
+1. Who am I.
 <br><br>
-2. **2** What my problem was.
+2. What my problem was.
 <br><br>
-3. **3** What tool I picked to learn how to solve that problem 
+3. What tool I picked to learn how to solve that problem 
     - Intro to FP.
     - Intro to Elm.
 <br><br>
-4. **4** Introduction to solving that problem for yourself.
+4. Introduction to solving that problem for yourself.
     - Some working code.
 <br><br>
-5. **5** What I then did to solve my problems.
+5. What I then did to solve my problems.
 
 ---
 
 ### Who am I?
 
-1. **1** Engineer for nearly 10 years... crap...really?
+1. Engineer for nearly 10 years... crap...really?
     - Electronics -> Web
 
-2. **2** Work for MarketInvoice.
+2. Work for MarketInvoice.
     - We help SMEs with cash flow using their existing invoices.
 
 ***
 
 ### My list of front-end problems
 
-1. **1** Two way binding?
-2. **2** Where is that state again?
-3. **3** Wait what kind of an object are you?
-4. **4** `{} + [] === 0; [] + {} === {};` <---- wut?
-5. **5** Are views even HTML anymore? Should they be?
-6. **6** `Something.prototype.botheringMe = someFuncThatIsnt`
-7. **7** Why hasn't this MVC model moved on!
-8. **8** Angular and similar can be........ slow.
+1. Two way binding?
+2. Where is that state again?
+3. Wait what kind of an object are you?
+4. `{} + [] === 0; [] + {} === {};` <---- wut?
+5. Are views even HTML anymore? Should they be?
+6. `Something.prototype.botheringMe = someFuncThatIsnt`
+7. Why hasn't this MVC model moved on!
+8. Angular and similar can be........ slow.
 
 ---
 
@@ -87,7 +87,7 @@
 #### 3. Runtime packaged with build files.
 #### 4. Functional.
 #### 5. Reactive.
-#### 6. Strongly (dial) typed.
+#### 6. Strongly typed, with generics.
 ### 7. ????
 ## 8. Profit.
 </div>
@@ -98,32 +98,41 @@
 
 There tends to be 4 mains 'kinds' of type.
 
-1. **1** Alias.
+1. Alias.
     - Naming a kind of primitive.
-2. **2** Union.
+2. Union.
     - Think of it as a label or tag.
-3. **3** Tuple.
+3. Tuple.
     - It's kind of a bucket for things.
-4. **4** Record.
+4. Record.
     - A set of named properties.
 
-<br><br>
+<br/><br/>
 
-Plus the common useful primitives, numbers, strings, arrays and lists.
+Plus the common useful primitives, that's; 
+
+numbers, strings, arrays, dictionaries and linked lists
 
 ---
 
 ### Immuatble
 
-The languages usually enforce immutability, therefore;
+The languages usually enforce immutability. Comparisons tend to be structural by default and data tends to be copied. Which is good for concurrency.
 
-If something is _**referencially**_ the same.
+<br/>
+<br/>
 
-It must be _**structurally**_ the same.
+<div style="text-align: left; padding-left:100px;">
 
-Therefore, comparisons tend to be structural by default and data tends to be copied. Which is good for concurrency 
+Also, therefore in Elm;
 
-(this doesn't matter in the DOM of course).
+If something is `referencially` the same.
+
+It must be `structurally` the same.
+
+_This is how virtual-dom does it's magic._
+
+</div>
 
 ---
 
@@ -131,10 +140,18 @@ Therefore, comparisons tend to be structural by default and data tends to be cop
 
 #### Input -> Output. 
 
-- No side effects: 
+<br/>
+<br/>
+
+<div style="text-align: left; padding-left:100px;">
+
+1. No side effects: 
     - Means this is hugely testable. 
     - Also easy to 'reason' about.
-- There is no _'state'_, just functions.
+2. There is no _'state'_, just functions.
+3. Elm has a runtime that deals with all the pesky 'real world' side effects.
+
+</div>
 
 ***
 
