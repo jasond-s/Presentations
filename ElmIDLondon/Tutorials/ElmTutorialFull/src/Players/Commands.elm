@@ -54,13 +54,13 @@ saveTask player =
             }
     in
         Http.send Http.defaultSettings config
-            |> Http.fromJson memberDecoder
+        |> Http.fromJson memberDecoder
 
 
 save : Player -> Cmd Msg
 save player =
     saveTask player
-        |> Task.perform SaveFail SaveSuccess
+    |> Task.perform SaveFail SaveSuccess
 
 
 memberEncoded : Player -> Encode.Value
@@ -73,4 +73,4 @@ memberEncoded player =
             ]
     in
         list
-            |> Encode.object
+        |> Encode.object

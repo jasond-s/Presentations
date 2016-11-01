@@ -12,8 +12,7 @@ import Routing exposing (Route)
 init : Result String Route -> ( Model, Cmd Msg )
 init result =
     let
-        currentRoute =
-            Routing.routeFromResult result
+        currentRoute = Routing.routeFromResult result
     in
         ( initialModel currentRoute, Cmd.map PlayersMsg fetchAll )
 

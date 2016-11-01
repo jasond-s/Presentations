@@ -7,40 +7,41 @@
 
 ***
 
-# Learning to embrace Elm
+# Learning to embrace <strike> events </strike> Elm
 
 ### We want speed!
 ### When do we want it!
 ### Yesterday!
-<br/>
-### Also FRP.
 
 ---
 
-### What's next?
+### What's coming up?
 
-1. Who am I.
+1. Who am I you?
 <br><br>
-2. What my problem was.
+2. What was my problem?
 <br><br>
-3. What tool I picked to learn how to solve that problem 
+3. How did I learn to solve that kind of problem?
     - Intro to FP.
     - Intro to Elm.
 <br><br>
-4. Introduction to solving that problem for yourself.
+4. How can you solve that problem yourselves?
     - Some working code.
 <br><br>
-5. What I then did to solve my problems.
+5. What did I do to solve my particular problem?
 
 ---
 
 ### Who am I?
 
-1. Engineer for nearly 10 years... crap...really?
+1. Engineer for nearly 10 years.
     - Electronics -> Web
 
 2. Work for MarketInvoice.
     - We help SMEs with cash flow using their existing invoices.
+
+3. Full disclosure.
+    - I'm not a master and I'm not a contributor, I'm just a fan.
 
 ***
 
@@ -53,9 +54,11 @@
 5. Are views even HTML anymore? Should they be?
 6. `Something.prototype.botheringMe = someFuncThatIsnt`
 7. Why hasn't this MVC model moved on!
-8. Angular and similar can be........ slow.
+8. Angular and similar can be................. slow.
 
 ---
+
+#### Learn how someone else is tackling their problems!
 
 <div style="width:90%; height: 90%; display: inline-block; vertical-align: top;">
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/comfort-zone.jpg" alt="comfort zone">
@@ -77,21 +80,6 @@
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/kittens.gif" alt="comfort zone">
 </div>
 
-***
-
-## What is ELM
-
-<div style="text-align: left; padding-left: 10%;">
-#### 1. Installed with NPM.
-#### 2. Compiles to Javascript.
-#### 3. Runtime packaged with build files.
-#### 4. Functional.
-#### 5. Reactive.
-#### 6. Strongly typed, with generics.
-### 7. ????
-## 8. Profit.
-</div>
-
 ---
 
 ### Type System
@@ -109,9 +97,9 @@ There tends to be 4 mains 'kinds' of type.
 
 <br/><br/>
 
-Plus the common useful primitives, that's; 
+#### Plus the common useful primitives; 
 
-numbers, strings, arrays, dictionaries and linked lists
+Int, Float, String, Array, Dict and (linked) List
 
 ---
 
@@ -146,7 +134,7 @@ _This is how virtual-dom does it's magic._
 <div style="text-align: left; padding-left:100px;">
 
 1. No side effects: 
-    - Means this is hugely testable. 
+    - Means this is easily tested. 
     - Also easy to 'reason' about.
 2. There is no _'state'_, just functions.
 3. Elm has a runtime that deals with all the pesky 'real world' side effects.
@@ -154,6 +142,21 @@ _This is how virtual-dom does it's magic._
 </div>
 
 ***
+
+## What is ELM
+
+<div style="text-align: left; padding-left: 10%;">
+#### 1. Installed with NPM.
+#### 2. Transpiles to Javascript.
+#### 3. Runtime packaged with build files.
+#### 4. Functional.
+#### 5. Reactive.
+#### 6. Strongly typed, with generics.
+### 7. ????
+## 8. Profit.
+</div>
+
+---
 
 ## Elm Architecture
 
@@ -196,7 +199,7 @@ _This is how virtual-dom does it's magic._
 #### 1. Event driven - ng.emit
 #### 2. Single source of data - ng.servce
 #### 3. Reactive - ng.on / $watch
-#### 4. Use Typescript betterer.
+#### 4. Use Typescript.
 <br/>
 ... Or of course React with Redux!
 
