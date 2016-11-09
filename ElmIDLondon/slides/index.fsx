@@ -17,7 +17,7 @@
 
 ### What's coming up?
 
-1. Who am I you?
+1. Who am I?
 <br><br>
 2. What was my problem?
 <br><br>
