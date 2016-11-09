@@ -54,6 +54,7 @@ update msg model =
 
 -- SUBSCRIPTIONS
 
+{-- Here we are asking the runtime for extrnal events --}
 
 subscriptions : Model -> Sub Msg
 subscriptions model =

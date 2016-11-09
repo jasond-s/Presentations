@@ -57,6 +57,7 @@ fetchTask =
     Http.get decode url
 
 
+{-- Here we create our future for some defered execution --}
 fetchCmd : Cmd Msg
 fetchCmd =
     Task.perform FetchError FetchSuccess fetchTask

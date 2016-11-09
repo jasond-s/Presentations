@@ -47,7 +47,9 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Roll ->
+            {-- Here we generate a command for the runtime to resolve --}
             ( model, Random.generate OnResult (Random.int 1 6) )
+            }
 
         OnResult res ->
             ( res, Cmd.none )

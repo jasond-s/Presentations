@@ -183,6 +183,30 @@ _This is how virtual-dom does it's magic._
 # <div style="font-family: 'SFComicScript' !important; color: #00ABEC;">SHOW ME</div>
 # <div style="font-family: 'SFComicScript' !important; color: #00ABEC;">THE CODE!</div>
 
+---
+
+### Event -> Update -> Model -> View
+
+---
+
+### Composition
+
+---
+
+### Commands
+
+#### and 
+
+### Subscriptions
+
+---
+
+### Tasks
+
+---
+
+### All working together!
+
 ***
 
 ### Elm Take Homes
