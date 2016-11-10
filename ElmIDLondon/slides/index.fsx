@@ -126,7 +126,7 @@ _This is how virtual-dom does it's magic._
 
 ### Purity
 
-#### Input -> Output. 
+The function always returns the same result when given the same set of arguments, there are no side effects (with some I/O caveats).
 
 <br/>
 <br/>
@@ -191,17 +191,25 @@ _This is how virtual-dom does it's magic._
 
 ### Composition
 
+##### Composing the DOM
+
+---
+
+### Subscriptions
+
+##### For extrnal input
+
 ---
 
 ### Commands
 
-#### and 
-
-### Subscriptions
+##### For side effects
 
 ---
 
 ### Tasks
+
+##### For async work
 
 ---
 
