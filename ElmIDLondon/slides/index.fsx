@@ -64,6 +64,8 @@
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/comfort-zone.jpg" alt="comfort zone">
 </div>
 
+##### more-leadership.com/ More-Leadership Bernd Geropp
+
 ***
 
 # Functional Ideals
@@ -74,11 +76,15 @@
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/its-hard.gif" alt="comfort zone">
 </div>
 
+##### tenor.co/view/struggle-cantmove-overit-hard-no-gif-4734482
+
 ---
 
 <div style="width:90%; height: 90%; display: inline-block; vertical-align: top;">
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/kittens.gif" alt="comfort zone">
 </div>
+
+##### tenor.co/view/cat-cats-kitten-kittens-adorable-gif-3565074
 
 ---
 
@@ -141,6 +147,30 @@ The function always returns the same result when given the same set of arguments
 
 </div>
 
+---
+
+### Partial Application
+
+A function called with one argument will return the same function with one less arity.
+
+<br/>
+
+This is hard to explain but easy to demonstrate... in javascript.
+
+    [lang=js]
+    // Mutiplication.
+    function a(x) {
+      return function b(y){
+        return x * y;
+      }
+    }
+
+    var willEqual4 = a(2)(2);
+    var multiplyBy2 = a(2);
+    var willEqual8 = multiplyBy2(4); // 8
+
+All functions with arity more than one are usually curried this way by default, to nested sets of arity one functions.
+
 ***
 
 ## What is ELM
@@ -191,7 +221,7 @@ The function always returns the same result when given the same set of arguments
 
 ### Composition
 
-##### Composing the DOM
+##### Composing the DOM.
 
 ---
 
@@ -240,6 +270,8 @@ The function always returns the same result when given the same set of arguments
 <div style="width:50%; height: 50%; display: inline-block; vertical-align: top;">
    <img style="width:90%; display: inline-block; box-shadow: none !important;" src="./images/try-it.jpg" alt="comfort zone">
 </div>
+
+##### memegenerator.net/instance/55538718
 
 ***
 
