@@ -31,7 +31,7 @@
 
 open FSharp.Plotly 
   
-let x = [0.5; 1.; 1.5; 2.;   3.;  3.5 ; 4.]
+let x = [2013; 2014; 2015; 2016; 2017;  2018; 2019]
 let y2 = [2.; 10.; 50.;  200.; 50.;  10.; 2.]
 let y1 = [2.; 10.; 50.;  200.; 100.;  80.; 75.]
 
@@ -105,12 +105,23 @@ let blue = FSharp.Care.Colors.Table.Office.blue
 
 **********************************************
 
-## Actual Useful Stuff
-
+## Actual Useful Stuff for next time
 
 **********************************************
 
 # [NCrunch](http://www.ncrunch.net/)
+
+---------------------------------------------
+
+![ncrunch](/images/ncrunch.png)
+
+---------------------------------------------
+
+![budget](/images/budget.gif)
+
+---------------------------------------------
+
+# [Continuous Tests](http://continuoustests.com/)
 
 **********************************************
 
@@ -139,5 +150,12 @@ let tests =
 
 runTests defaultConfig tests
 (**
+
+
+**********************************************
+
+# FsCheck and Quick Check
+
+#### Bogdan is going to give a talk all about only this because it's so completely amazingly AWESOME!
 
 *)
