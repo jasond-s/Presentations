@@ -1,0 +1,10 @@
+source https://nuget.org/api/v2
+
+nuget FSharp.Plotly
+nuget FsReveal
+nuget FAKE
+nuget Suave
+nuget FsLab
+nuget Expecto
+nuget Expecto.BenchmarkDotNet
+nuget Expecto.FsCheck

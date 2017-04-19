@@ -1,0 +1,42 @@
+var _user$project$App$subscriptions = function (model) {
+	return _elm_lang$core$Platform_Sub$none;
+};
+var _user$project$App$initModel = {widgetModel: _user$project$Widget$initModel};
+var _user$project$App$init = {ctor: '_Tuple2', _0: _user$project$App$initModel, _1: _elm_lang$core$Platform_Cmd$none};
+var _user$project$App$AppModel = function (a) {
+	return {widgetModel: a};
+};
+var _user$project$App$WidgetMsg = function (a) {
+	return {ctor: 'WidgetMsg', _0: a};
+};
+var _user$project$App$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				A2(
+				_elm_lang$html$Html_App$map,
+				_user$project$App$WidgetMsg,
+				_user$project$Widget$view(model.widgetModel))
+			]));
+};
+var _user$project$App$update = F2(
+	function (message, model) {
+		var _p0 = message;
+		var _p1 = A2(_user$project$Widget$update, _p0._0, model.widgetModel);
+		var updatedWidgetModel = _p1._0;
+		var widgetCmd = _p1._1;
+		return {
+			ctor: '_Tuple2',
+			_0: _elm_lang$core$Native_Utils.update(
+				model,
+				{widgetModel: updatedWidgetModel}),
+			_1: A2(_elm_lang$core$Platform_Cmd$map, _user$project$App$WidgetMsg, widgetCmd)
+		};
+	});
+var _user$project$App$main = {
+	main: _elm_lang$html$Html_App$program(
+		{init: _user$project$App$init, view: _user$project$App$view, update: _user$project$App$update, subscriptions: _user$project$App$subscriptions})
+};
