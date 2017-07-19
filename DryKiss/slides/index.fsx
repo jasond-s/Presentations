@@ -11,7 +11,7 @@
 
 ---
 
-#### So lets look at some common Practices (big p) in the form of programming acronyms, and see what limitations they are diminishing.
+#### So lets look at one common Practice (big p), a programming acronym, and see what limitations it is diminishing......
 
 ---
 
@@ -43,9 +43,9 @@
 
 #### Is an auto property breaking this rule?
 
-*"Is it an encapsulation that 'makes sense' and can the whole thing fit in your head?"*
-
 *"Equally vague but pragmatism is key, refer to the business, not the rule."*
+
+*"Is it an encapsulation that 'makes sense' and can the whole thing fit in your head?"*
 
 ***
 
@@ -89,7 +89,7 @@
 
 <br/><br/>
 
-#### Polymorphic dancing; strategies of strategies into managers for factories.
+#### Polymorphic dancing, is-a or as-a.
 
 *"Composition is always easier to reason about that inheritace... #diamondproblem"*
 
@@ -139,26 +139,32 @@
 
 #### But we can easily end up in abstraction soup.
 
-*"We are not designing universally re-usable low level libraries. Re-use is overrated, write code you need for the situation you are in. Take BCrypt as cautionary tale!"*
+#### Strategies of strategies into managers for factories.
+
+*"We are not designing universally re-usable low level libraries."*" 
+
+*"Re-use is overrated, write code you need for the situation you are in. Take BCrypt as cautionary tale!"*
 
 ***
 
-# DRY your KISS
+## Did SOLID diminish a limitation?
 
-*"Don't needlessly repeat yourself, given, but code is far more maintainable, changeable, and pleasnt to work with when it is simple."*
-
-*"If the abstraction can fit in your head and logically sits together, that's fine... breaking up is usally easier than combining later in code or in your head when you are reading it."*
+#### I think not, seemed to just defined a set of arbitrary rules the world that the **intent** was based on has changed.
 
 ---
 
-# Write simple code!
+# DRY 
 
-### Readability and changeability are far more useful than terseness or artistic structure.
+*"Don't needlessly repeat yourself, given, but code is far more maintainable, changeable, and pleasant to work with when it is concious of it's context."*
+
+# KISS
+
+*"If the abstraction can fit in your head and logically sits together, that's fine... breaking up is usually easier than combining later in code or in your head when you are reading it."*
 
 ---
 
-*If you still want to write sexy code, there are loads of open source projects in need of framework devs.*
+# Write simple, clear, code!
 
-***
+### Readability and flexibility are far more useful than terseness or artistic and generic structure.
 
 *)
