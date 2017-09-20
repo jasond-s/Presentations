@@ -56,9 +56,13 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="CallForHelp.fs" />
     <Compile Include="DataTransformation.fs" />
     <Compile Include="CentralExceptionHandling.fs.fs" />
     <Compile Include="Infrastructure.fs" />
+    <Compile Include="CompilerHeavyLifting.fs" />
+    <Compile Include="VendorLibraries.fs" />
+    <Compile Include="UncleBen.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />

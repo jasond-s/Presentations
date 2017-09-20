@@ -23,15 +23,14 @@ module Inf =
 
     // No more DI hell! Just type signatures
     let doWork value = 
-        transform { Key = "userName"; Value = 3 } value
-        |> saveValueInMyDatabase
+        transform { Key = "userName"; Value = 3 } value |> saveValueInMyDatabase
 
 
     // You can even make this stuff easy to test
     let doWorkSuperDuperTestable value saveFn =
         transform { Key = "userName"; Value = 3 } value
         |> saveFn
-
+        
     let test =  
         let expected = { Key = "userName"; Value = 4 }
         let result = doWorkSuperDuperTestable 4 (fun value -> value)

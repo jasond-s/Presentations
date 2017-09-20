@@ -38,7 +38,7 @@ This is why I am using F# and C# in examples.
 
 #### 3. **Recency Illusion:** 
 
-Functional programming is relatively new to me.
+Functional programming is surrounded by hype.
 
 #### 4. **Once burned twice shy:** 
 
@@ -60,7 +60,7 @@ Functional programming failed me.
 
 ### Centralised Exception Handling
 
-#### [CWE:209](https://cwe.mitre.org/data/definitions/209.html)
+#### [Information Exposure Through an Error Message - CWE:209](https://cwe.mitre.org/data/definitions/209.html)
 
 ![homer holds a tree on fire](images/exceptions.gif)
 
@@ -68,9 +68,9 @@ Functional programming failed me.
 
 ## Removal Of Infrastructure
 
-#### No more DI, partial application FTW.
+#### No more dependancy injection, partial application FTW.
 
-![homer throws DI away](images/rubbish.gif)
+![homer throws a book away](images/rubbish.gif)
 
 ---
 
@@ -110,14 +110,14 @@ Functional programming failed me.
 
 ***
 
-### Don't let me put you off. 
+### Don't let me put you off, but be careful.
 
-## Functional patterns are awesome.
+## Functional patterns are awesome and worth it.
 
 ---
 
 > "Yeah, but I'm not gonna let it change our lives. I'll be the same loving parent I've always been." 
-#### Homer Simpson
+#### Homer Simpson _- on newly found fame_
 
 ---
 
@@ -131,10 +131,7 @@ Functional programming failed me.
 ### <span style="color: #416F85; text-shadow: none; font-size: 75%;">Email: jason@codat.io</span>
 
 ##### Generation
-**[reveal.js](http://lab.hakim.se/reveal-js/#/)** presentation from [markdown](http://daringfireball.net/projects/markdown/)
-
-##### Formatting
-**[FSharp.Formatting](https://github.com/tpetricek/FSharp.Formatting)** for markdown parsing
+**[FsReveal](https://github.com/fsprojects/FsReveal)** for slides
 
 ##### Homer
 **[giphy](https://giphy.com)** for all the great Homer gifs
