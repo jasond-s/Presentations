@@ -110,6 +110,22 @@ Functional programming failed me.
 
 ***
 
+### How I would recommend getting your teams involved
+
+<br><br>
+
+1. Limit language scope
+<br><br>
+2. Limit blast radius
+<br><br>
+3. Introduce slowly
+<br><br>
+4. Talk a lot, review a lot
+<br><br>
+5. Build libraries not applications
+
+---
+
 ### Don't let me put you off, but be careful.
 
 ## Functional patterns are awesome and worth it.
