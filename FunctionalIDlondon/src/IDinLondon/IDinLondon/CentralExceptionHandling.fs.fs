@@ -3,7 +3,8 @@
 module Ceh = 
 
     open IDinLondon.Dt
-
+    open System
+ 
     // A cause of failure 
     type Failure = 
         | NotImplemented
@@ -26,10 +27,10 @@ module Ceh =
         let response = updateTheThing dbValue request  
         
         match response with
-        | Success response -> response.ToString()
+        | Success response -> response.ToString() // Probably serialise JSON
         | Failure fail ->
             match fail with
-            | NotImplemented -> "Not implemented!"
+            | NotImplemented -> "Not implemented!" // Localise in one place?
 
     
 

@@ -21,7 +21,7 @@ body {
 }
 
 .reveal h2, .reveal h3 {
-	color: #112147;
+	color: #085078;
 }
 
 .reveal h4 {
@@ -56,27 +56,27 @@ p > code {
 }
 
 .reveal .progress {
-	height: 11px;
+    height: 15px;
 }
 
-.reveal progress span {	
-	color: #FFA500;
+.reveal .progress span {	
+	background: radial-gradient(ellipse farthest-side at 100% 100%,#a1c8d6 10%,#66a9bd 50%,#085078 120%) !important;
 }
 
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
 	border-right-color: #008B8B !important;
 }
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled{
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled{
 	border-bottom-color: #008B8B !important;
 }
-.reveal .controls div.navigate-right,
-.reveal .controls div.navigate-right.enabled {
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
 	border-left-color: #008B8B !important;
 }
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
 	border-top-color: #008B8B !important;
 }
 
@@ -92,17 +92,17 @@ p > code {
     quotes: "\201C""\201D""\2018""\2019";
 }
 
-    .reveal blockquote:before {
-        margin-left: -10px;
-        color: #112147;
-        content: open-quote;
-        font-size: 4em;
-        line-height: 0.1em;
-        margin-right: 0.25em;
-        vertical-align: -0.4em;
-        font-family: "SFComicScript";
-    }
+.reveal blockquote:before {
+    margin-left: -10px;
+    color: #112147;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    font-family: "SFComicScript";
+}
 
-    .reveal blockquote p {
-        display: inline;
-    }
+.reveal blockquote p {
+    display: inline;
+}

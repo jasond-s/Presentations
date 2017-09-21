@@ -28,17 +28,17 @@
 
 ### A few of my biases
 
-#### 1. **Knowledge:** 
-
-I am a .Net dev (mostly) so deepest knowledge lies here.
-
-#### 2. **Platform:** 
+#### 1. **Platform:** 
 
 This is why I am using F# and C# in examples.
 
-#### 3. **Recency Illusion:** 
+#### 2. **Recency Illusion:** 
 
-Functional programming is surrounded by hype.
+Functional programming is surrounded by buzz.
+
+#### 3. **Boring enterprise code:** 
+
+I'm not an academic or a hacker, I write boring but hopefully hard working enterprise code.
 
 #### 4. **Once burned twice shy:** 
 
@@ -82,6 +82,10 @@ Functional programming failed me.
 
 ***
 
+![homer declares it the end of the world](images/theend.gif)
+
+***
+
 # FML Functional
 
 ---
@@ -107,6 +111,10 @@ Functional programming failed me.
 #### Getting the time to train. 
 
 ![homer watches monkeys trying to type](images/training.gif)
+
+---
+
+![homer disappear into a bush](images/rantover.gif)
 
 ***
 
@@ -135,8 +143,7 @@ Functional programming failed me.
 > "Yeah, but I'm not gonna let it change our lives. I'll be the same loving parent I've always been." 
 #### Homer Simpson _- on newly found fame_
 
----
-
+***
 
 <div style="width:33%; height: 100%; display: inline-block; vertical-align: top;">
    <img style="width:50%; display: inline-block; box-shadow: none !important; background: radial-gradient(ellipse farthest-side at 100% 100%,#a1c8d6 10%,#66a9bd 50%,#085078 120%);" src="./images/codat_logo.png" alt="mi logo">
