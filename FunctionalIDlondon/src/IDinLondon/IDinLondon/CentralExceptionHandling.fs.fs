@@ -8,6 +8,7 @@ module Ceh =
     // A cause of failure 
     type Failure = 
         | NotImplemented
+        | ValidationValueGreaterThan5
 
     // A nice ... ahem ... monadic type to hold everything
     type Result<'a> =
@@ -31,6 +32,7 @@ module Ceh =
         | Failure fail ->
             match fail with
             | NotImplemented -> "Not implemented!" // Localise in one place?
+            | ValidationValueGreaterThan5 -> "Validation Error"
 
     
 

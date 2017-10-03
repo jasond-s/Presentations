@@ -62,7 +62,11 @@ UNCLE BEN CODE
 1. A lot of code out there that is built from functional first, is built by people that are into the maths of it.
 2. Classes and OO were built around and became so popular because it was an abstraction with language that people understood.
 3. Don't forget your lessons learned from here, name things, terse code isn't always the best code.
-4. Code needs to be maintained and needs to be open to change if it is going to do really hard work in a business.
+
+4. Lists are easy in a lot of functional languages, but don't forget about your O(n) considerations.
+5. People seem to be scared of loops, if you don't know the magic functional map, fold, collect, reduce, just use a loop! 
+
+Final. Code needs to be maintained and needs to be open to change if it is going to do really hard work in a business.
 
 TRAINING
 
@@ -76,3 +80,4 @@ SUMMARISE!!!!
 
 
 HOW TO GET INVOLVED
+

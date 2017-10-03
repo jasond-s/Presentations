@@ -112,21 +112,19 @@
 
 #### F#
 
-*)
-type Doing = string
-type Doer =
-    | Super of Doing
-    | Lame of Doing
+    [lang=fs]
+    type Doing = string
+    type Doer =
+        | Super of Doing
+        | Lame of Doing
 
-let whosDoingIt doer =
-  match doer with
-  | Super _ -> "Pay Rise"
-  | Lame _ -> "P45"
-  | _ -> "Holiday?"
+    let whosDoingIt doer =
+      match doer with
+      | Super _ -> "Pay Rise"
+      | Lame _ -> "P45"
+      | _ -> "Holiday?"
 
-whosDoingIt (Super "I'm so busy its crazy.")
-(*** include-value: whosDoingIt (Super "I'm so busy its crazy.") ***)
-(**
+    whosDoingIt (Super "I'm so busy its crazy.")
 
 ---
 
