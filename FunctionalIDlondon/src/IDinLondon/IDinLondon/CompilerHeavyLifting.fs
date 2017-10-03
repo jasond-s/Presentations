@@ -23,7 +23,7 @@ module Chl =
     let depth  = 0.5M<meters>
     
     let areaOfSquareThing width height : decimal<area> = 
-        width / height
+        width * height
 
     let volumeOfSquareThing width height depth : decimal<volume> = 
         width * height * depth
