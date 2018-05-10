@@ -11,11 +11,9 @@
 
 ---
 
-#### So lets look at one common Practice (big p), a programming acronym, and see what limitations it is diminishing......
-
----
-
-![](/images/cinammon_challenge.gif)
+#### So lets look at one common Practice
+#### (a well known programming acronym)
+#### and see what limitations it is diminishing
 
 ***
 
@@ -31,6 +29,8 @@
 
 #### Each thing should do one and only on thing.
 
+<br/><br/>
+
 *"Only one thing to change when requirements change. #utopia"*
 
 ---
@@ -41,11 +41,13 @@
 
 #### How single is a responsibility?
 
-#### Is an auto property breaking this rule?
+#### Is a C# auto property breaking this rule?
 
-*"Equally vague but pragmatism is key, refer to the business, not the rule."*
+<br/><br/>
 
-*"Is it an encapsulation that 'makes sense' and can the whole thing fit in your head?"*
+**OK, so that is equally vague, but...**
+
+*"Is it an encapsulation that 'makes sense' to the business not the programming language and can the whole thing fit in your head?"*
 
 ***
 
@@ -55,7 +57,9 @@
 
 #### Open to extension and closed to modification.
 
-*"When requirements change extend the system for the new functions."*
+<br/><br/>
+
+*"When requirements change extend the system for the new functions"*
 
 *"Don't change code that works."*
 
@@ -65,13 +69,15 @@
 
 <br/><br/>
 
-#### This is retarded.
+#### This is just silly.
 
 <br/><br/>
 
-*"When requirements change **CHANGE** the system for the new functions."*
+*"When requirements change **CHANGE** the system for the new functions, state, and behaviours"*
 
-*"Code rarely exists in a vacuum, don't be frightened of changing it."*
+*"Code rarely exists in a vacuum, don't be frightened of changing it"*
+
+#### Fear is the absolute worst
 
 ***
 
@@ -79,9 +85,12 @@
 
 <br/><br/>
 
-#### Strong behavioural subtyping. Subtype provides all desireable behaviours.
+#### Strong behavioural subtyping. 
+#### Subtype provides all desireable behaviours.
 
-*"Hierarchical structure implies behaviour for later extension."*
+<br/><br/>
+
+*"Hierarchical structure implies whole system behaviour for later extension"*
 
 ---
 
@@ -89,11 +98,21 @@
 
 <br/><br/>
 
-#### Polymorphic dancing, is-a or as-a.
+#### Polymorphic dancing
 
-*"Composition is always easier to reason about that inheritace... #diamondproblem"*
+<br/><br/>
 
-*"Functional polymorphism is secretly composition and pattern matching!"*
+*"Composition is always easier to reason about that inheritace"*
+
+---
+
+## you be having #diamondproblems I feel bad for you son, you got 99 classes but the this overload ain't the right one
+
+---
+
+## BONUS FACT: 
+
+### Functional polymorphism is secretly composition and pattern matching!
 
 ***
 
@@ -101,9 +120,11 @@
 
 <br/><br/>
 
-#### Many small interfaces better than one big one.
+#### Design against the smallest needed abstraction
 
-*"Design to abstraction, no client knows about things it does not use, remember rule letter 'S'."*
+<br/><br/>
+
+*"Design to abstraction, no client knows about things it does not use, remember 'Single responsibility'"*
 
 ---
 
@@ -111,13 +132,13 @@
 
 <br/><br/>
 
-#### Anything is better than god objects.
+#### Anything is better than god objects
 
-#### Suffers everthing that rule 'S' does.
+<br/><br/>
 
-*"Creating all these abstractions just creates chains between you and your DI."*
+*"Creating all these micro abstractions just creates messy chains between you and your, probably very dominant, DI"*
 
-*"Premature seperation breaks the 'change just one thing' utopia."*
+*"Premature seperation leads you away from the 'change just one thing' utopia. Fiddling with all the related codes structure, and not behaviour"*
 
 *** 
 
@@ -126,6 +147,8 @@
 <br/><br/>
 
 #### High level components should not depend on low level components.
+
+<br/><br/>
 
 *"Interfaces should not depend on details in the implementations"*
 
@@ -137,34 +160,69 @@
 
 #### Yeah, ok, I guess this sort of makes sense.
 
-#### But we can easily end up in abstraction soup.
+--- 
 
-#### Strategies of strategies into managers for factories.
+### However!
 
-*"We are not designing universally re-usable low level libraries."*" 
+#### We can easily end up in abstraction soup
 
-*"Re-use is overrated, write code you need for the situation you are in. Take BCrypt as cautionary tale!"*
+#### Strategies for factories into managers of services.
+
+<br/><br/>
+
+*"We are probably not designing re-usable low level libraries."* 
+
+*"Re-use is overrated, write code you need for the situation you are in!"*
 
 ***
 
 ## Did SOLID diminish a limitation?
 
-#### I think not, seemed to just defined a set of arbitrary rules the world that the **intent** was based on has changed.
+<br/><br/>
+
+#### Seemed to just define a set of arbitrary and vague rules
+#### The world the rules were built in has changed
+
+<br/><br/>
+
+#### For the better
 
 ---
 
 # DRY 
 
-*"Don't needlessly repeat yourself, given, but code is far more maintainable, changeable, and pleasant to work with when it is concious of it's context."*
+*"Don't needlessly repeat yourself, but code is far more maintainable, changeable, and pleasant to work with when it is concious of it's context."*
 
 # KISS
 
-*"If the abstraction can fit in your head and logically sits together, that's fine... breaking up is usually easier than combining later in code or in your head when you are reading it."*
+*"If the abstraction can fit in your head and logically sits together, that's fine, at lby me. Breaking up is usually easier than combining later, in code OR in your head when you are reading it."*
 
 ---
 
 # Write simple, clear, code!
 
-### Readability and flexibility are far more useful than terseness or artistic and generic structure.
+<br/><br/>
+
+### Readable and flexible code is the most useful thing to your business
+
+### Better a bit 'wrong' today, if it means it's easier to get a bit more 'right' tomorrow.
+
+***
+
+<div style="width:33%; height: 100%; display: inline-block; vertical-align: top;">
+   <img style="width:50%; display: inline-block; box-shadow: none !important; background: radial-gradient(ellipse farthest-side at 100% 100%,#a1c8d6 10%,#66a9bd 50%,#085078 120%);" src="./images/codat_logo.png" alt="codat logo">
+</div>
+<div style="width:65%; height: 100%; display: inline-block; text-align: left; padding-top: 10px;">
+### <span style="color: #464B4B; font-size: 120%;">Thanks</span>
+### <span style="color: #416F85; text-shadow: none; font-size: 75%;">Tweet: @jasond_s</span>
+### <span style="color: #416F85; text-shadow: none; font-size: 75%;">Email: jason@codat.io</span>
+
+##### Generation
+**[FsReveal](https://github.com/fsprojects/FsReveal)** for slides
+
+##### Hiring
+**[Codat](https://codat.io)** is looking for passionate C# devs
+
+</div>
 
 *)
