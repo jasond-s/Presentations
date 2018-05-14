@@ -9,13 +9,9 @@
 
 > "Technology can bring benefits if, and only if, it diminishes a limitation" - *Eli Golduatt "Beyond the Goal*"
 
----
-
-#### So lets look at one common Practice
-#### (a well known programming acronym)
-#### and see what limitations it is diminishing
-
 ***
+
+# 🦄
 
 ## SOLID
 
@@ -31,7 +27,7 @@
 
 <br/><br/>
 
-*"Only one thing to change when requirements change. #utopia"*
+*"Only one thing to change when requirements change #utopia"*
 
 ---
 
@@ -69,15 +65,17 @@
 
 <br/><br/>
 
-#### This is just silly.
+#### This is just silly
 
 <br/><br/>
 
 *"When requirements change **CHANGE** the system for the new functions, state, and behaviours"*
 
-*"Code rarely exists in a vacuum, don't be frightened of changing it"*
+*"Strategy spaghetti can easily overrule clarity in a code base, inversion of control can be hard to follow"*
 
-#### Fear is the absolute worst
+<br/><br/>
+
+#### 🦇 Fear is the absolute worst 💀
 
 ***
 
@@ -86,7 +84,7 @@
 <br/><br/>
 
 #### Strong behavioural subtyping. 
-#### Subtype provides all desireable behaviours.
+#### Subtype provides all desirable behaviours.
 
 <br/><br/>
 
@@ -106,9 +104,20 @@
 
 ---
 
-## you be having #diamondproblems I feel bad for you son, you got 99 classes but the this overload ain't the right one
+### Inheritance =  More Rules!
+
+#### 1. Preconditions (before an action what must be true)
+#### 2. Postconditions (after an action what must be true)
+#### 3. Invariants (during an action what must be true)
+#### 4. History Constraint (mutation by subtype not allowed by super)
 
 ---
+
+## if you're having #diamondproblems I feel bad for you son, you got 99 classes... but the this overload ain't the right one and it has violated my invariants by disregarding the history constraint.
+
+---
+
+# ❤
 
 ## BONUS FACT: 
 
@@ -158,7 +167,7 @@
 
 <br/><br/>
 
-#### Yeah, ok, I guess this sort of makes sense.
+#### Yeah, ok, I guess this sort of makes sense... 😜
 
 --- 
 
@@ -176,26 +185,33 @@
 
 ***
 
-## Did SOLID diminish a limitation?
+## Does SOLID diminish a limitation?
 
 <br/><br/>
 
 #### Seemed to just define a set of arbitrary and vague rules
+#### Leads you  down a path of over abstraction
 #### The world the rules were built in has changed
 
 <br/><br/>
 
-#### For the better
+#### For the better 👍 🐱 🐶 🍰
 
 ---
+
+# 🌵
 
 # DRY 
 
 *"Don't needlessly repeat yourself, but code is far more maintainable, changeable, and pleasant to work with when it is concious of it's context."*
 
-# KISS
+---
 
-*"If the abstraction can fit in your head and logically sits together, that's fine, at lby me. Breaking up is usually easier than combining later, in code OR in your head when you are reading it."*
+# 😘
+
+# KISS 
+
+*"If the abstraction can fit in your head and logically sits together, that's fine, at least by me. Breaking up is usually easier than combining later, in code OR in your head when you are reading it."*
 
 ---
 
