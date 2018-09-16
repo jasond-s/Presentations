@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-R.ttf');
+}
+
+body {
+    background-color: #224B62;
+}
+
+.reveal  table.pre {
+	width: 96%;
+}
+
+.reveal h1 {
+	color: #0B324D;
+}
+
+.reveal h2, .reveal h3 {
+	color: #4D7E94;
+}
+
+.reveal h4 {
+	color: #94A78B;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+	text-shadow: -3px 3px #D3D3D3;
+}
+
+.reveal a {
+   outline: 0;
+   color: #112147;
+}
+
+.reveal a:visited{
+    color: darkslategrey;
+}
+
+.reveal ul,
+.reveal ol {
+    margin-left: 85px;
+    margin-right: 50px;
+}
+
+.reveal p,
+.reveal ul,
+.reveal li {
+    font-family: Georgia;
+	color: #000;
+}
+
+p > code {
+    background: none repeat scroll #212d30 !important;
+    color: #A6E22E !important;
+    padding: 1px 5px !important;
+}
+
+.reveal .progress {
+	height: 11px;
+}
+
+.reveal .progress span {	
+	background: #7AB55C !important;
+}
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+	border-right-color: #7AB55C !important;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled{
+	border-bottom-color: #7AB55C !important;
+}
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+	border-left-color: #7AB55C !important;
+}
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+	border-top-color: #7AB55C !important;
+}
+
+.reveal .slides {
+	background-color: #fff;
+    box-shadow: -5px 5px 18px #23506A;
+}
+
+.reveal blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+    .reveal blockquote:before {
+        margin-left: -10px;
+        color: #112147;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+        font-family: "Ubuntu";
+    }
+
+    .reveal blockquote p {
+        display: inline;
+    }
