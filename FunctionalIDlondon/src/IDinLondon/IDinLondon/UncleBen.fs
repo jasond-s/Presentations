@@ -46,14 +46,14 @@ module Ub =
 
     // type ¬[A] = A => Nothing
     //
-    // using De Morgan's law this allows him to define union types 
+    // using De Morgan's law this allows him to define {X} types 
     // type ∨[T, U] = ¬[¬[T] with ¬[U]]
     //
     // With the following auxiliary constructs 
     // type ¬¬[A] = ¬[¬[A]]
     // type |∨|[T, U] = { type λ[X] = ¬¬[X] <:< (T ∨ U) }
     //
-    // you can write union types as follows: 
+    // you can write {X} types as follows: 
     // def size[T : (Int |∨| String)#λ](t : T) = t match {
     //     case i : Int => i
     //     case s : String => s.length
