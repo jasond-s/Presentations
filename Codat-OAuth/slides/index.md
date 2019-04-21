@@ -21,8 +21,8 @@
 
 ## Not
 
-1. Comprehensive technical implimentation discussion.
-2. Complete history of authorisation protocols.
+1. Comprehensive technical implimentation discussion
+2. Complete history of authorisation protocols
 3. Codat implementation specifics
 
 #### See me after class
