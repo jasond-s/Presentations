@@ -140,6 +140,22 @@ Retrieve
 
 ---
 
+## 2.4 Validation
+
+#### There are 2 stages of validation that occur during a push:
+
+1. The public API will first validate that the data recieved is a valid push operation.
+    - This prevents corrupt data getting as far as the platform.
+    - The reponse code will be a HTTP 400, or 404.
+    - Fail fast.
+
+2. The platform will validate the data that has been sent to push.
+    - This prevents corrupt data getting as far as the platform.
+    - This is platform specific and is communicated in the field information of the options API.
+    - Human readble and developer friendly error messaging.
+
+---
+
 ![](../images/homer.gif)
 
 ***
