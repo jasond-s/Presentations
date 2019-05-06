@@ -53,7 +53,7 @@ The individual user that wants to grant access.
 
 <div style="background: #fff; padding-top: 20px; padding-bottom: 20px;">
 ## 2. Authorising Service 
-## Or. (Data Holder)
+## Or. Data Holder
 
 The owner or holder of the users data.
 </div>

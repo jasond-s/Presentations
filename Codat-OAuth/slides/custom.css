@@ -74,7 +74,7 @@ p > code {
 
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-	border-right-color: #F0F !important;
+	border-right-color: #F00 !important;
 }
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled{
@@ -82,7 +82,7 @@ p > code {
 }
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-	border-left-color: #0FF !important;
+	border-left-color: #F0F !important;
 }
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
