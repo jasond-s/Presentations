@@ -61,7 +61,7 @@ The owner or holder of the users data.
 ---
 
 <div style="background: #fff; padding-top: 20px; padding-bottom: 20px;">
-## 3. Cient 
+## 3. Client 
 ## Or. Requesting Service
 
 The service that wishes to gain access to the users data. 
