@@ -1,5 +1,5 @@
-- title : HttpClient
-- description : An introduction to using HttpClient for RPC
+- title : Testing
+- description : Why do we write tests?
 - author : Jason Dryhurst-Smith
 - theme : night
 - transition : default
@@ -31,12 +31,16 @@
 ---
 
 ### 1. Make your brakes better
-### 2. Build your engines
+### 2. Then build your engines
 
 </br>
 </br>
 
 ### Note: Don't build brakes for speeds you'll never achieve
+
+---
+
+> ‘There is surely nothing quite so useless as doing with great efficiency what should not be done at all.’ - Peter Drucker
 
 ***
 

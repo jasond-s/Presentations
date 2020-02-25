@@ -21,29 +21,27 @@
 
 ### Narrative
 #### The narrative arch.
-![The narrative arch.](http://blogs.forrester.com/f/b/users/kbodine/boom-wow-660.png)
+![The narrative arch.](https://fcmalby.files.wordpress.com/2014/05/story-arc.jpg)
 
-***
+---
 
 ### Taxonomy 
 #### Classification and order.
 
 ---
 
-### Domain Driven Design
-
-#### Ubiquitous Language
-
-***
-
 ### Network
 #### How does the information relate to existing information.
 
----
+***
 
 ### Namespacing
+#### Enterprise Architecture' and defining bounded contexts.
 
-####  Enterprise Architecture' and defining bounded contexts.
+---
+
+### Domain Driven Design
+#### Ubiquitous Language
 
 ***
 
@@ -66,9 +64,5 @@
 #### Design and development are inseparable, your business will do better if it's structure reflects this.
 
 ##### Nancy Willacy - @nancetron
-
-***
-
-#### Also, don't ever run out of coffee at a conference.
 
 *)
