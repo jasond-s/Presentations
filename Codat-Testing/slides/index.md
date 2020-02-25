@@ -10,7 +10,7 @@
 
 ***
 
-# Why do cars have breaks?
+# Why do cars have brakes?
 
 ---
 

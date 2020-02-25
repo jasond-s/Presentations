@@ -97,7 +97,7 @@ Or basically just trying to do two things at once...
 
 #### Go
 
-    [lang=cs]
+    [lang=golang]
     package main
 
     import "sync"
@@ -203,7 +203,7 @@ Or basically just trying to do two things at once...
 
 #### Erlang
 
-    [lang=fs]
+    [lang=erlang]
     -module(temperature).
 
     -author("jason@jasonds.co.uk").

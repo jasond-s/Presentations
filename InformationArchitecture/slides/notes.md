@@ -1,6 +1,5 @@
 DON'T JUMP CUT FOR NO REASON!
 
-
 - Hello I am Jason, intro
 
 - Biases and corrections
