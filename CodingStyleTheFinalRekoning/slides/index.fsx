@@ -17,17 +17,21 @@
 
 ***
 
-### Increase readability. 
+#### Increase readability. 
 
 - Increase the consistency of writing. 
 - The silhouette rule (moer on this later).
 
-### Increase maintainability. 
+---
+
+#### Increase maintainability. 
 
 - Reduce repeated **business specification** code (where possible).
 - Minimise acts of **syntax** condensing.
 
-### Increase quality. 
+---
+
+#### Increase quality. 
 
 - Reduce the number of unnecessarily changed lines of code, as this can introduce bugs.
 

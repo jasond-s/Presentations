@@ -302,11 +302,15 @@ Some of the users they send data to may be using a piece of desktop software tha
 
 <div style="text-align:left; padding-left: 50px;">
 
-#### 1. Push Operation completed
+#### 1. Push Operation Completed
 
 Fired whenever a Push Operation moves to a final state.
 
 This means that we can bring together all of that great async architecture and allow our clients to be notified about changes of status.
+
+#### 2. Push Operation TimedOut
+
+Fired whenever a Push Operation times out.
 
 </div>
 
@@ -387,23 +391,23 @@ There are a few classes of errors that are important to distinguish:
 
 ---
 
+</br>
+
 ### 2.2.4. Errors - Pre and Post
 
 <div style="text-align:justify; padding: 0 50px;">
 
 We are not very good at distinguishing this. There are a few Codat error codes that specifically detail idempotency (can I resend the same data and expect the same result).
 
-</div>
-
-[RFC - Error Code Extensions](https://codatdocs.atlassian.net/wiki/spaces/TECH/pages/1092091910/Error+Codes)
-
 </br>
-
-<div style="text-align:justify; padding: 0 50px;">
 
 *e.g. call the police 8 times for the same event 1 car shows up*
 
 </div>
+
+</br>
+
+[RFC - Error Code Extensions](https://codatdocs.atlassian.net/wiki/spaces/TECH/pages/1092091910/Error+Codes)
 
 ---
 
