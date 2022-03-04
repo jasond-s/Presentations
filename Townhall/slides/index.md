@@ -8,7 +8,11 @@
  
 # Engineering 
 
-# Townhall
+# Townhall 
+
+---
+
+# Josephine from Compliance
 
 ---
 
@@ -17,16 +21,6 @@
 ---
 
 ### New Starters
-
----
-
-### Hiring
-
-#### Open Roles
-
-1. Principal QA
-2. SQL DBA (with azure exp)
-3. SRE (with azure exp)
 
 ---
 
