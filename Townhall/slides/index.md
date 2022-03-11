@@ -16,14 +16,6 @@
 
 ---
 
-## People Notices
-
----
-
-### New Starters
-
----
-
 ## Feedback Form
 
 ---
