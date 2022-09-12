@@ -6,52 +6,52 @@
 
 ***
  
-# Engineering 
+# Lunchtime Meetings
 
-# Townhall
+### Bad. Fair enough.
 
----
-
-## People Notices
+#### Block out time and be firm.
 
 ---
 
-### New Starters
+# Standard Practice
+
+[Project Management At Big Tech](https://blog.pragmaticengineer.com/project-management-at-big-tech/)
 
 ---
 
-### Hiring
+# Client Contact
 
-#### Open Roles
-
-1. Principal QA
-2. SQL DBA (with azure exp)
-3. SRE (with azure exp)
+[Some Demos](https://codatdocs.atlassian.net/wiki/spaces/PT/pages/1501298754/Clients+demos)
 
 ---
 
-## Feedback Form
+# Coding For QA
+
+### Your team, chat to the other engineers in your team.
+
+#### null-slash-dev-tech-team, there is so much good stuff that gets shared here.
+
+### Lucy's awesome React workshop.
+
+[Book Recommendations](https://codatdocs.atlassian.net/wiki/spaces/TECH/pages/668500213/Book+Recommendations)
 
 ---
 
-## RFCs & ADRs
+# Bonuses
 
----
+### The Cliff 
+not having the money right now
 
-## Deprecations
+### Crunch Mode 
+what are you willing to exchange for your bonus
 
----
+### Objective Measure 
+what would you like to be measured on
 
-## New Services
+***
 
----
+# Training Requests
 
-## Learning
-
----
-
-## Incidents & Outages
-
----
-
-## POC Updates
+#### Mostly functional/OOP/clean code
+#### Some delivery

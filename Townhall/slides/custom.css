@@ -8,6 +8,11 @@
     src: url('../fonts/HVD_Comic_Serif_Pro.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Metal Mania'; /*a name to be used later*/
+    src: url('../fonts/MetalMania-Regular.ttf'); /*URL to font*/
+}
+
 body {
 	background-color: #A6E22E;
     background-image: url(../images/background.png);
@@ -20,15 +25,15 @@ body {
 }
 
 .reveal h1 {
-	color: #1FCFEC;
+	color: #074f5a;
 }
 
 .reveal h3 {
-	color: #6AE697;
+	color: #0eaf49;
 }
 
 .reveal h2 {
-	color: #FF8E3D;
+	color: #af5c20;
 }
 
 .reveal h4 {
@@ -36,7 +41,7 @@ body {
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-    font-family: 'Fira Code', 'Comic Sans MS';
+    font-family: 'SFComicScript', 'Comic Sans MS', 'Fira Code';
     font-weight: bold;
 	text-shadow: -3px 3px #02E8F8;
 }
@@ -53,7 +58,7 @@ body {
 .reveal p,
 .reveal ul,
 .reveal li {
-    font-family: 'Comic Sans MS';
+    font-family: "Rockwell", serif;
 	color: #000;
 }
 
