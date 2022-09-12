@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'SFComicScript'; /*a name to be used later*/
+    src: url('../fonts/SF_Comic_Script.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'HDVComicSerifPro'; /*a name to be used later*/
+    src: url('../fonts/HVD_Comic_Serif_Pro.ttf'); /*URL to font*/
+}
+
+body {
+	background-color: #A6E22E;
+    background-image: url(../images/background.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+}
+
+.reveal  table.pre {
+	width: 96%;
+}
+
+.reveal h1 {
+	color: #1FCFEC;
+}
+
+.reveal h3 {
+	color: #6AE697;
+}
+
+.reveal h2 {
+	color: #FF8E3D;
+}
+
+.reveal h4 {
+	color: #88F;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: 'Fira Code', 'Comic Sans MS';
+    font-weight: bold;
+	text-shadow: -3px 3px #02E8F8;
+}
+
+.reveal a {
+   outline: 0;
+   color: #112147;
+}
+
+.reveal a:visited{
+    color: darkslategrey;
+}
+
+.reveal p,
+.reveal ul,
+.reveal li {
+    font-family: 'Comic Sans MS';
+	color: #000;
+}
+
+p > code {
+    background: none repeat scroll #212d30 !important;
+    color: #A6E22E !important;
+    padding: 1px 5px !important;
+}
+
+.reveal .progress {
+    height: 15px;
+}
+
+.reveal .progress span {	
+	background: radial-gradient(ellipse farthest-side at 100% 100%,#88F 10%,#66a9bd 50%,#F0F 120%) !important;
+}
+
+.reveal .controls {
+	margin-bottom: 50px;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+	border-right-color: #88F !important;
+}
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled{
+	border-bottom-color: #F0F !important;
+}
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+	border-left-color: #88F !important;
+}
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+	border-top-color: #F0F !important;
+}
+
+.reveal .slides {
+    top: -50px !important;
+    background-color: rgba(255, 255, 255, 1);    
+	box-shadow: -8px 8px 0px #88F;
+}
+
+.reveal blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.reveal blockquote:before {
+    margin-left: -10px;
+    color: #112147;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    font-family: "SFComicScript";
+}
+
+.reveal blockquote p {
+    display: inline;
+}
