@@ -6,32 +6,31 @@
 
 ***
  
-# Townhall 
+![new here](../images/newhere.jpg)
 
 ***
 
-# ⏱️
-# 10 minutes of tips
+### I will be meeting everyone, for a chat. Expect an invite.
 
 ***
 
-# People announcements
+# Pulse Survey
 
-***
+### Generally, pretty good.
 
-# Presentations
+---
 
-### Career Progression - Alex Edwards + Candice Linneman
-### SQL Parameter Sniffing - Richard McCrae
+## Still working through the actions
 
-***
+---
 
-# Change Notices
+## Training and Development
 
-***
+---
 
-# Incident Learnings
+### Policy for requests on the way
 
-***
+---
 
-# Any other business?
+### Book club, what do people think?
+

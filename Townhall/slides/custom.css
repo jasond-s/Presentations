@@ -25,25 +25,25 @@ body {
 }
 
 .reveal h1 {
-	color: #074f5a;
+	color: #428372;
 }
 
 .reveal h3 {
-	color: #0eaf49;
+	color: #428372;
 }
 
 .reveal h2 {
-	color: #af5c20;
+	color: #428372;
 }
 
 .reveal h4 {
-	color: #88F;
+	color: #428372;
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-    font-family: 'Metal Mania', 'HDVComicSerifPro', 'SFComicScript', 'Comic Sans MS', 'Fira Code';
+    font-family: 'HDVComicSerifPro', 'SFComicScript', 'Fira Code';
     font-weight: bold;
-	text-shadow: -3px 3px #02E8F8;
+	text-shadow: -3px 3px #9BCABE;
 }
 
 .reveal a {
@@ -73,7 +73,7 @@ p > code {
 }
 
 .reveal .progress span {	
-	background: radial-gradient(ellipse farthest-side at 100% 100%,#88F 10%,#66a9bd 50%,#F0F 120%) !important;
+	background: radial-gradient(ellipse farthest-side at 100% 100%,#428372, #F38173 100%) !important;
 }
 
 .reveal .controls {
@@ -82,25 +82,25 @@ p > code {
 
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-	border-right-color: #88F !important;
+	border-right-color: #FF685F !important;
 }
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled{
-	border-bottom-color: #F0F !important;
+	border-bottom-color: #FF685F !important;
 }
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-	border-left-color: #88F !important;
+	border-left-color: #FF685F !important;
 }
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-	border-top-color: #F0F !important;
+	border-top-color: #FF685F !important;
 }
 
 .reveal .slides {
     top: -50px !important;
     background-color: rgba(255, 255, 255, 1);    
-	box-shadow: -8px 8px 0px #88F;
+	box-shadow: -8px 8px 0px #428372;
 }
 
 .reveal blockquote {
