@@ -1,0 +1,8 @@
+/*!
+* reveal.js 5.0.3
+* https://revealjs.com
+* MIT licensed
+*
+* Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
+*/
+@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Tinos;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/tinos/v24/buE4poGnedXvwjX7fmQ.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.red-thing{color:#f38173!important}.reveal h1{font-weight:700;font-size:300%!important}.reveal .progress{background:#f38173!important;border:none!important}.reveal .controls{right:var(--r-controls-spacing);color:#428372!important}.flash{animation:flash 1.5s linear infinite}@keyframes flash{0%{color:#f38173;transform:rotate(0)}50%{color:#428372;transform:rotate(180deg)}100%{color:#f38173;transform:rotate(360deg)}}.marquee{width:450px;margin:0 auto;overflow:hidden;box-sizing:border-box}.marquee span{text-transform:uppercase;display:inline-block;width:max-content;padding-left:100%;will-change:transform;animation:marquee 7s linear infinite}.marquee span:hover{animation-play-state:paused}@keyframes marquee{0%{transform:translate(0,0);color:#f38173}25%{transform:translate(-25%,0);color:#428372}75%{transform:translate(-75%,0);color:#f38173}100%{transform:translate(-100%,0);color:#428372}}
