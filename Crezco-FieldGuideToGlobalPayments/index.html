@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+		<link rel="stylesheet" href="dist/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>
+						Section One
+						<small>Credit Cards</small>
+					</h1>
+				</section>
+				<section>
+					<h1>
+						Glossary
+						<small>Actors</small>
+					</h1>
+					<ul>
+						<li><b>Network</b> - Visa, Mastercard, etc</li>
+						<li><b>Merchant</b> - Selling stuff</li>
+						<li><b>Cardholder</b> - The customer</li>
+						<li><b>Issuer</b> - Issues the card</li>
+						<li><b>Acquirer</b> - The merchants payment processor, not just banks, members of the network</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Money Flow
+						<small>ISO8583</small>
+					</h1>
+					<ol>
+						<li>Merchant makes authorization request</li>
+						<li>Issuer responds with <i>yes or no</i></li>
+						<li>Merchant captures the money when ready from network</li>
+						<li>Issuer settles money goes from issuer to network to acquirer</li>
+					</ol>
+				</section>
+				<section>
+					<h1>
+						Money Flow
+						<small>authorization</small>
+					</h1>
+					<ul>
+						<li>Details are captured, terminal or HPP whatever</li>
+						<li>Authorization hold
+							<ul>
+								<li>Possibly more than the value of the transaction</li>
+							</ul>
+						</li>
+						<li>Decline reasons are vast, but most DNH is given
+							<ul>
+								<li>Soft reasons can be retried</li>
+								<li>Hard reasons cannot</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Money Flow
+						<small>capture</small>
+					</h1>
+					<ul>
+						<li>Money moves via a capturing file</li>
+						<li>Fees (there are a lot of these)
+							<ul>
+								<li><b>Net:</b> from transaction, interchange and processing</li>
+								<li><b>Periodic:</b> some are taken monthly, risk and tokenization</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Money Flow
+						<small>settlement</small>
+					</h1>
+					<ul>
+						<li>Settlement delays
+							<ul>
+								<li>Can take a long time for the merchant to get cash from their acquirer</li>
+								<li>Some services offer credit to speed this up</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Money Flow
+						<small>chargebacks</small>
+					</h1>
+					<ul>
+						<li>Issuer charges it back from the merchant via acquirer (not merchant directly)
+							<ul>
+								<li>fraud - cardholder did not initiate</li>
+								<li>service - not received by cardholder (transaction needs to be made whole, refunds, credit)</li>
+								<li>technical - maybe a retry or some other technical error</li>
+							</ul>
+						</li>
+						<li>Fee, because of course there is.</li>
+						<li>Evidence is required to be filled for this to be successful</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Type Of Card
+						<small>debit</small>
+					</h1>
+					<ul>
+						<li>Comes with all current/checking account
+							<ul>
+								<li>signature</li>
+								<li>PIN</li>
+								<li>contactless</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Type Of Card
+						<small>credit</small>
+					</h1>
+					<ul>
+						<li>Revolving: balance is carried over</li>
+						<li>Non-Revolving: balance must be paid</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Type Of Card
+						<small>prepaid</small>
+					</h1>
+					<ul>
+						<li>Open loop - available as credit across a network</li>
+						<li>Closed loop - available as credit with specific merchants</li>
+						<li>Reloadable - you can top it up</li>
+						<li>Non-ReLoadable - it's a gift card
+							<ul>
+								<li>breakage: under use claimed as revenue</li>
+								<li>escheatment: under use that require reclaim</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Business Models
+						<small>independent sales organization</small>
+					</h1>
+					<p>stripe and adyen</p>
+					<ul>
+						<li>Resells merchants to acquirers</li>
+						<li>Brings in merchants through ancillary features</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Business Models
+						<small>payment service provider</small>
+					</h1>
+					<p>paypal and square</p>
+					<ul>
+						<li>Owns a reference to a merchant ID in network</li>
+						<li>Onboards customers as sub-merchants.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Business Models
+						<small>merchant of record</small>
+					</h1>
+					<p>ebay and airbnb</p>
+					<ul>
+						<li>Not the one selling the goods</li>
+						<li>Identified by
+							<ul>
+								<li>Identified to cardholder</li>
+								<li>Uses there own name in communications</li>
+								<li>Provides service for dispute</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Liability
+					</h1>
+					<ul>
+						<li>Generally the issuer if the card was present</li>
+						<li>Other security means such as 3DS are used to lower risk and move liability</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Fees
+					</h1>
+					<ul>
+						<li>Interchange fees</li>
+						<li>Scheme fees</li>
+						<li>Settlement fees</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Cross Border Payments
+					</h1>
+					<ul>
+						<li>Correspondent Banking
+							<ul>
+								<li>Nostro and vostro accounts in cooperating parties.</li>
+								<li>nothing moves across the border, the settlement occurs locally</li>
+							</ul>
+						</li>
+						<li>Considerations
+							<ul>
+								<li>FX incurs fees</li>
+								<li>Managing multiple accounts can be expensive</li>
+								<li>Local rules can be complex for sales and fees as a PSP</li>
+								<li>Authorisation rates can be lower as issuer gets nervous</li>
+								<li>Moar fees, everyone wants a cut</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						FIN
+					</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal-timeline/dist/timeline.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
