@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+		<link rel="stylesheet" href="dist/custom.css">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.hill-chart-container {
+				margin: 20px auto;
+				width: 500px;
+			}
+			.dot {
+				cursor: move;
+				fill: #428372;
+				transition: fill 0.2s;
+			}
+			.dot:hover {
+				fill: #2a5548;
+			}
+			.hill-path {
+				fill: none;
+				stroke: #666;
+				stroke-width: 2;
+			}
+			.hill-label {
+				font-size: 12px;
+				fill: #666;
+			}
+			.dot-label {
+				font-size: 10px;
+				fill: #428372;
+				pointer-events: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Previous slides remain the same until Team Methodology -->
+				<section>
+					<h3>
+						Shape Up
+						<small>🛠️</small>
+					</h3>
+					<img src="dist/logo.png"/>
+					<p>Basecamp's Product Development Methodology</p>
+				</section>
+
+				<section>
+					<h2>What is Shape Up?</h2>
+					<ul>
+						<li>Development methodology created by Basecamp</li>
+						<li>Alternative to traditional Agile practices</li>
+						<li>Focus on shipping meaningful work in cycles</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="color: #428372;">Core Principles</h2>
+					<div class="column">
+						<h3>Shaping</h3>
+						<p>Define the solution space, not the solution</p>
+					</div>
+					<div class="column">
+						<h3>Betting</h3>
+						<p>Commit to projects by your appetite in time</p>
+					</div>
+				</section>
+					<section>
+					<h2 style="color: #428372;">Core Principles</h2>
+					<div class="column">
+						<h3>Building</h3>
+						<p>Complete autonomy for implementation teams</p>
+					</div>
+					<div class="column">
+						<h3>Downtime</h3>
+						<p>Space between projects to think</p>
+					</div>
+				</section>
+
+				<section>
+					<h2 style="color: #428372;">Shaping Work</h2>
+					<ul>
+						<li>Fat marker: High-level designs</li>
+						<li>Rabbit holes: Clear boundaries and constraints</li>
+						<li>Appetite: How much of our time is worth it</li>
+						<li>Leave room for creativity in implementation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="color: #428372;">Cycles</h2>
+					<ul>
+						<li>Long enough for meaningful work</li>
+						<li>Short enough to see the end</li>
+						<li>No sprints or story points</li>
+						<li>Cool-down period between cycles</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="color: #428372;">No Backlogs</h2>
+					<ul>
+						<li>Start fresh each cycle</li>
+						<li>Good ideas resurface naturally</li>
+						<li>Reduces psychological burden</li>
+						<li>Forces prioritization</li>
+					</ul>
+				</section>
+				<section data-background-iframe="https://my.hillchart.app/p/7ff2dd76-bdea-485b-a46c-c18f3892ddd3" data-background-interactive>
+					<div style="position: absolute; width: 40%; left: 30%; bottom: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2 style="color: #428372;">Team Methodology</h2>
+						<ul>
+							<li>Work it out yourself</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2 style="color: #428372;">Learn More</h2>
+					<div style="display: flex; flex-direction: column; align-items: center;">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/RmBuqn-8pL8?si=2NYCkKmDpIsYrH-F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<ul style="margin-top: 20px;">
+							<li>Read the free book: <a href="https://basecamp.com/shapeup">basecamp.com/shapeup</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal-timeline/dist/timeline.js"></script>
+
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ 
+					RevealMarkdown, 
+					RevealHighlight, 
+					RevealNotes, 
+					//RevealTimeline 
+				]
+			});
+		</script>
+	</body>
+</html>

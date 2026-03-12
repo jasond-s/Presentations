@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+		<link rel="stylesheet" href="dist/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>
+						Devops
+						<small>(developer operations)</small>
+					</h3>
+					<img src="dist/logo.png"/>
+				</section>
+				<section>
+					<h3>
+						Devops
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						The DORA metrics from the annual state of devops report are the most widely respected measures of business success related to productivity for software engineers:
+					</p>
+					<ul>
+						<li>Change lead time</li>
+						<li>Deployment frequency</li>
+						<li>Change fail percentage</li>
+						<li>Mean time to recovery</li>
+					</ul>
+				</section>
+				<section data-background-iframe="https://dora.dev/publications/" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0;box-shadow: 0 1px 30px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2);background-color: #fff;color: #000;padding: 20px;font-size: 20px;text-align: left;">
+						<h2>Published Reports</h2>
+						<p>Everything including methodology is available. It's helpful to have read the book, but not essential.</p>
+						<p>We have to remember Godwin's Law.</p>
+					</div>
+				</section>
+				<section>
+					<h3>
+						Throughput
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						How quickly can we move as an organization to get product out of the door.
+					</p>
+					<ul>
+						<li>Change lead time</li>
+						<li>Deployment frequency</li>
+					</ul>
+				</section>
+				<section>
+					<h3>
+						Stability
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						Can we move fast without breaking things.
+					</p>
+					<ul>
+						<li>Change fail percentage</li>
+						<li>Mean time to recovery</li>
+					</ul>
+				</section>
+				<section>
+					<h3>
+						Pick and Drive
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						We started the year with a dev day and we talked about what we would drive over the course of the year.				
+					</p>
+				</section>
+				<section>
+					<h3>
+						Deployment Frequency
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						We wanted to release a lot more than just once a week. 
+					</p>
+					<p>
+						It was risky, a big headache and still didn't catch all the bugs.
+						If we had recorded <i>Change Fail Percentage</i>, it would have been 100%!
+					</p>
+				</section>
+				<section>
+					<h3>
+						Let's Talk About Throughput
+						<small>(design, build, test, deploy, observe)</small>
+					</h3>
+					<p>
+						We have gone from 1 release a week to many. 
+					</p>
+					<p>
+						The important thing is <i>on demand</i> and we have that for all of these services:
+					</p>
+					<ul style="margin-left: 0;">
+						<li>KYC: backend, as well as the front-end</li>
+						<li>Payment processing: Orchestration, open banking, account providers for FX</li>
+						<li>Monitoring: Sentinel</li>
+						<li>Operations: Control panel, health aggregator</li>
+					</ul>
+				</section>
+				<section>
+					<h4>
+						What About The Metrics
+						<small>(design, build, test, deploy, observe)</small>
+					</h4>
+					<img src="dist/hours-to-merge.png" />
+					<small>source: github stats</small>
+				</section>
+				<section>
+					<h4>
+						What About The Metrics
+						<small>(design, build, test, deploy, observe)</small>
+					</h4>
+					<img src="dist/complexity-over-time.png"/>
+					<small>source: github stats</small>
+				</section>
+				<section>
+					<h1>
+						<span class="blink-text">APPLAUSE</span>
+						<small>(design, build, test, deploy, observe)</small>
+					</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal-timeline/dist/timeline.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ 
+					RevealMarkdown, 
+					RevealHighlight, 
+					RevealNotes, 
+					//RevealTimeline 
+				]
+			});
+
+		</script>
+	</body>
+</html>
